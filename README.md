@@ -13,7 +13,7 @@ curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.pha
 ```sh
 curl -s https://raw.githubusercontent.com/gturpin-dev/wp_installer/main/install.sh -o install.sh
 ```
-- Give the good rights if not `chmod 777 install.sh`
+- Give the good rights if not `chmod u+x install.sh`
 - Launch the script `./install.sh`
 - Start a localhost, for example `php -S localhost:8000`
 
