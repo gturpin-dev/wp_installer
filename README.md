@@ -4,10 +4,15 @@ Script which install WordPress locally easily
 This script require WP-CLI
 
 You can download wp-cli.phar like this :
-> curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
+```sh
+curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
+```
 
 ## Start script
-- Download `install.sh` from this repo.
+- Download `install.sh` from this repo or by cUrl :
+```sh
+curl -s https://raw.githubusercontent.com/gturpin-dev/wp_installer/main/install.sh -o install.sh
+```
 - Give the good rights if not `chmod 777 install.sh`
 - Launch the script `./install.sh`
 - Start a localhost, for example `php -S localhost:8000`
