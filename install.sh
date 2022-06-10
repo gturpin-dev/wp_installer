@@ -3,6 +3,9 @@
 ################################
 # Ask for variables
 ################################
+echo "Quel est l'url de votre projet( exemple: https://localhost:8000 ) ?"
+read project_url
+echo "------------------------"
 echo "Quel est le nom de votre projet ?"
 read project_name
 echo "------------------------"
@@ -39,7 +42,7 @@ define( 'WP_DEBUG_LOG', true );
 define( 'WP_POST_REVISIONS', 3 );
 PHP
 wp db create
-wp core install --url='http://localhost:8000' --title=$project_name --admin_user=admin --admin_password=admin --admin_email=test@test.fr --skip-email
+wp core install --url=$project_url --title=$project_name --admin_user=admin --admin_password=admin --admin_email=test@test.fr --skip-email
 
 # User admin do not have id of 1
 wp user delete 1 --yes
