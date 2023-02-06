@@ -47,6 +47,7 @@ wp core install --url=$project_url --title=$project_name --admin_user=admin --ad
 # User admin do not have id of 1
 wp user delete 1 --yes
 wp user create $site_id $site_mail --user_pass=$site_passwd --role=administrator
+wp option update admin_email $site_mail
 
 # Set good permalinks
 wp rewrite structure '/%postname%/'
