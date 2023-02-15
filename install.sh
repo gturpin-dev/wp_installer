@@ -51,6 +51,7 @@ wp option update admin_email $site_mail
 
 # Set good permalinks
 wp rewrite structure '/%postname%/'
+wp rewrite flush
 
 # Delete all sample stuff
 wp plugin delete --all
